@@ -10,36 +10,28 @@ body:
       label: Describe the bug
       description: A sufficient description of the bug
   - type: textarea
-    validations:
-      required: true
-    attributes:
-      label: How to reproduce the bug?
-      description: Please provide any required setup and steps to reproduce the behavior
-      placeholder: |
-        1. Go to '...'
-        2. Tap on '...'
-        3. See error...
-  - type: textarea
     attributes:
       label: Expected behavior
       description: A concise description of what you expected to happen
-  - type: textarea
-    attributes:
-      label: Screenshots
-      description: If necessary, put screenshots here
   - type: input
     validations:
       required: true
     attributes:
-      label: App version
-      description: The version of the application can be found by entering the command "version"
+      label: Library version
+      description: The version of the library can be found in the file "build.gradle.kts"
   - type: input
     validations:
       required: true
     attributes:
       label: Operating system
-      description: Please specify the operating system with version tag and software overlay name
-      placeholder: e.g. Android 13, OneUI 5.0, MIUI 14
+      description: Please specify the operating system with the version tag or build number
+      placeholder: e.g. Ubuntu 22.10, Windows 11 (22621), macOS 13.0.1
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: IDE
+      description: What IDE are you using?
   - type: textarea
     attributes:
       label: Additional context
